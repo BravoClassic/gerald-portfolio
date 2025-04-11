@@ -114,6 +114,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>We build and evaluate several predictive models and then derive business insights from feature importance analysis—all without resampling the dataset.</p>
 </section>
 <section id="data-loading-and-exploration" class="level1">
+  <h2>Dataset Details</h2>
+  <p>The customer churn dataset includes a mix of demographic, financial, and behavioral variables. Below is a detailed description of each feature:</p>
+  <ul>
+    <li><strong>RowNumber:</strong> A sequential number assigned to each record. This serves solely as an index and does not hold predictive value.</li>
+    <li><strong>CustomerId:</strong> A unique identifier for each customer. While useful for record keeping, it is not used for modeling.</li>
+    <li><strong>Surname:</strong> The last name of the customer. This variable is not predictive and is excluded from the analysis.</li>
+    <li><strong>CreditScore:</strong> A numerical score representing the customer’s credit rating. Lower credit scores typically indicate higher financial risk, which may correlate with churn.</li>
+    <li><strong>Geography:</strong> The country where the customer is based (e.g., France, Spain, Germany). This categorical variable might capture regional economic and cultural differences affecting churn.</li>
+    <li><strong>Gender:</strong> The customer’s gender, recorded as "male" or "female." Gender differences can influence customer behavior patterns.</li>
+    <li><strong>Age:</strong> The customer’s age in years. Age is a critical factor, as life stage and financial needs evolve over time.</li>
+    <li><strong>Tenure:</strong> The number of years the customer has been with the service provider. Longer tenure might imply stronger relationships, although it may also indicate potential complacency.</li>
+    <li><strong>Balance:</strong> The account balance of the customer. Extremes in balance, either very high or very low, may be indicative of risk.</li>
+    <li><strong>NumOfProducts:</strong> The number of products or services that the customer is using. Customers with more products might be less likely to churn.</li>
+    <li><strong>HasCrCard:</strong> A binary indicator showing whether the customer holds a credit card (0 = no, 1 = yes).</li>
+    <li><strong>IsActiveMember:</strong> A binary variable indicating whether the customer is an active member of the service (0 = inactive, 1 = active).</li>
+    <li><strong>EstimatedSalary:</strong> The customer’s estimated annual salary. This financial indicator can correlate with spending power and loyalty.</li>
+    <li><strong>Exited:</strong> The target variable, where 1 indicates that the customer left (churned) and 0 indicates that they stayed.</li>
+  </ul>
 <h1>Data Loading and Exploration</h1>
 <p>In this section we load the customer churn dataset and perform initial exploratory analysis.</p>
 <div class="cell">
