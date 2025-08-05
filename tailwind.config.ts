@@ -54,6 +54,16 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        monet: {
+          sky: "#9fc2f8",
+          sun: "#f8c471",
+          grass: "#7db572",
+        },
+        vangogh: {
+          night: "#23395b",
+          star: "#f2d64b",
+          bloom: "#c15e86",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
